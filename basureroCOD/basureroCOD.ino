@@ -38,10 +38,10 @@ void setup() {
 
   // Inicializar tarjeta SD
   if (!SD.begin(SD_CS)) {
-    Serial.println("⚠️ No se pudo inicializar la tarjeta SD.");
+    Serial.println(" No se pudo inicializar la tarjeta SD.");
     sdDisponible = false;
   } else {
-    Serial.println("✅ Tarjeta SD lista.");
+    Serial.println("Tarjeta SD lista.");
     sdDisponible = true;
     tmrpcm.speakerPin = 10;  // Salida de audio
     tmrpcm.setVolume(6);     // Volumen entre 0 y 7
